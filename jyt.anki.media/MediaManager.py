@@ -26,7 +26,6 @@ class DecksDialog(QDialog):
 				decks.append(deckName)
 		for deckName in sorted(decks):
 			self.combo.addItem(deckName)
-		self.combo.setCurrentIndex(1)
 		layout.addWidget(self.combo)
 
 		layout.addWidget(QLabel("Root of the http server (no trailing / )"))
